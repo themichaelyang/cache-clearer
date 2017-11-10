@@ -10,7 +10,7 @@ chrome.browserAction.onClicked.addListener((tab) => {
     clear(tab.id)
   }
   else {
-    chrome.browserAction.setIcon({ tabId: tab.id, path: "icons/off.png" })
+    chrome.browserAction.setIcon({ tabId: tab.id, path: 'icons/off.png' })
   }
 })
 
@@ -21,6 +21,6 @@ chrome.tabs.onUpdated.addListener((tabId) => {
 })
 
 function clear(tabId) {
-  chrome.browserAction.setIcon({ tabId: tabId, path: "icons/on.png" })
-  chrome.tabs.executeScript({ tabId: tabId, file: 'cache-clear.js' })
+  chrome.browserAction.setIcon({ tabId: tabId, path: 'icons/on.png' })
+  chrome.tabs.executeScript(tabId, { file: 'cache-clear.js' })
 }

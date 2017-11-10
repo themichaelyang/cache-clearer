@@ -17,6 +17,7 @@
   "permissions": [
     "activeTab",
     "browsingData",
-    "tabs"
+    "tabs",
+    "<all_urls>"
   ]
 }
