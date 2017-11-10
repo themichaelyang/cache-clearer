@@ -23,7 +23,5 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
 
 function clear(tabId) {
   chrome.browserAction.setIcon({ tabId: tabId, path: 'icons/on.png' })
-  chrome.browsingData.removeCache({}, () => {
-    alert('cleared!')
-  })
+  chrome.browsingData.removeCache()
 }
