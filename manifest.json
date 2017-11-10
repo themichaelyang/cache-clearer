@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cache Clearer",
+  "description": "Clears the cache of the current site you're on.",
+  "version": "0.0",
+
+  "browser_action": {
+    "default_icon": "icons/off.png",
+    "default_title": "Click here!"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "browsingData",
+    "tabs"
+  ]
+}
