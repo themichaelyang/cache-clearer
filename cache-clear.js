@@ -1,9 +1,13 @@
-if (!window.cacheClearer) {
-  window.cacheClearer = true
-
-  alert('running!')
-
-  window.addEventListener('load', () => {
-    alert('window loaded!')
-  })
-}
+// if (!window.cacheClearer) {
+//   window.cacheClearer = true
+//
+//   chrome.browsingData.removeCache({}, () => {
+//     alert('cleared! 1')
+//   })
+//
+//   window.addEventListener('load', () => {
+//     chrome.browsingData.removeCache({}, () => {
+//       alert('cleared! 2')
+//     })
+//   })
+// }

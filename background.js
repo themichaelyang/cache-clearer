@@ -14,13 +14,16 @@ chrome.browserAction.onClicked.addListener((tab) => {
   }
 })
 
-chrome.tabs.onUpdated.addListener((tabId) => {
-  if ((tabId in running) && running[tabId]) {
+chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
+  if (changeInfo.status === 'complete' &&
+  (tabId in running) && running[tabId]) {
     clear(tabId)
   }
 })
 
 function clear(tabId) {
   chrome.browserAction.setIcon({ tabId: tabId, path: 'icons/on.png' })
-  chrome.tabs.executeScript(tabId, { file: 'cache-clear.js' })
+  chrome.browsingData.removeCache({}, () => {
+    alert('cleared!')
+  })
 }
