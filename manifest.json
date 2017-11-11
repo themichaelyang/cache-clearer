@@ -7,7 +7,7 @@
 
   "browser_action": {
     "default_icon": "icons/off.png",
-    "default_title": "Click here!"
+    "default_title": "Cache clearer is OFF; Click to turn on."
   },
 
   "background": {
