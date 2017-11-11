@@ -5,6 +5,10 @@
   "description": "Clears the cache of the current site you're on.",
   "version": "0.0",
 
+  "icons": {
+    "128": "icons/128.png"
+  },
+
   "browser_action": {
     "default_icon": "icons/off.png",
     "default_title": "Cache clearer is OFF; Click to turn on."
