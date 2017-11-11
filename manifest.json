@@ -15,8 +15,8 @@
   },
 
   "permissions": [
-    "activeTab",
     "browsingData",
+    "webRequest",
     "tabs",
     "<all_urls>"
   ]
