@@ -27,8 +27,7 @@ chrome.browserAction.onClicked.addListener((tab) => {
 
 // ensure icon is updated even upon tab update or refresh!
 chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
-  if (changeInfo.status === 'complete' &&
-  (tabId in running) && running[tabId]) {
+  if ((tabId in running) && running[tabId]) {
     turnOn(tabId)
   }
 })
