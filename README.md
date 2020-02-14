@@ -16,3 +16,5 @@ Inspired by [this](https://github.com/uoziod/chrome-cache-killer), which is the 
 # Installation
 
 Git clone or download `cache-clearer`. Go to `chrome://extensions`, and enable developer mode. Then "LOAD UNPACKED" and select the `cache-clearer` directory.
+
+See [here](https://developer.chrome.com/extensions/getstarted) for more details.
