@@ -12,3 +12,7 @@ Use this one instead; its open source so you view the source and can load it unp
 Unlike other cache clearers, it can toggle clearing independently per tab, so you don't have to keep turning it on and off. Plus it's MIT licensed.
 
 Inspired by [this](https://github.com/uoziod/chrome-cache-killer), which is the extension I used to use before it went bad.
+
+# Installation
+
+Git clone or download `cache-clearer`. Go to `chrome://extensions`, and enable developer mode. Then "LOAD UNPACKED" and select the `cache-clearer` directory.
